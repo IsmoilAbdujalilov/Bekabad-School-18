@@ -1,1 +1,0 @@
-# Bekabad-School-18
