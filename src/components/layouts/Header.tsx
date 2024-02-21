@@ -8,7 +8,7 @@ const Header = () => {
           <a href="#">
             <div className="nav__link">
               <img
-                width={56.87}
+                width={100}
                 src={HeaderLogo}
                 alt="header-logo"
                 className="nav-intro"
@@ -45,10 +45,10 @@ const Header = () => {
               </a>
             </li>
           </ul>
+          <a className="nav-reception" href="#" role="button">
+            Qabulxona
+          </a>
         </nav>
-        <a className="nav-reception" href="#" role="button">
-          Qabulxona
-        </a>
       </div>
     </header>
   );
