@@ -6,14 +6,17 @@ const Header = () => {
       <div className="container">
         <nav className="nav">
           <a href="#">
-            <img
-              src={HeaderLogo}
-              alt="header-logo"
-              className="nav-intro"
-              title="18-maktab logo"
-            />
-            <span className="nav-school-city">Bekabod shahar</span>
-            <span className="nav-school-name">18 - Maktab</span>
+            <div className="nav__link">
+              <img
+                width={56.87}
+                src={HeaderLogo}
+                alt="header-logo"
+                className="nav-intro"
+                title="18-maktab logo"
+              />
+              <p className="nav-school-city">Bekabod shahar</p>
+              <p className="nav-school-name">18 - Maktab</p>
+            </div>
           </a>
           <ul className="nav__list">
             <li className="nav__item">

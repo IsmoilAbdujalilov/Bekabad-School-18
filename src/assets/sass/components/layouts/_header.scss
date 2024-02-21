@@ -1,0 +1,18 @@
+.header {
+  .nav {
+    &-intro {
+      width: 49.24px;
+    }
+    &__link {
+      width: 70px;
+      text-align: center;
+      display: inline-block;
+    }
+    &-school-city {
+      @include headingFonts(#1f263399, 8px, 400, 12px, default);
+    }
+    &-school-name {
+      @include headingFonts(#1f2633, 12px, 600, 1px, default);
+    }
+  }
+}
