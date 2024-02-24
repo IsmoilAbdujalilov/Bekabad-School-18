@@ -1,13 +1,7 @@
 .nav {
   @include flexLayout(flex, space-between, center, none, row nowrap);
-  &-intro {
-    width: 85px;
-  }
-  &__link {
-    width: 120px;
-    text-align: center;
-    display: inline-block;
-  }
+
+
   &-school-city {
     @include headingFonts(#1f263399, 14px, 400, 12px, none);
   }

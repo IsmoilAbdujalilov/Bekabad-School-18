@@ -1,23 +1,27 @@
+import Button from "../Button";
+import { useState } from "react";
 import { HeaderLogo } from "../../assets/images/svg";
 
 const Header = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+
   return (
     <header className="header">
-      <div className="container">
+      <div className="header__container container">
+        <a href="#">
+          <div className="header__link">
+            <img
+              width={100}
+              src={HeaderLogo}
+              alt="header-logo"
+              className="header-intro"
+              title="18-maktab logo"
+            />
+            <p className="nav-school-city">Bekabod shahar</p>
+            <p className="nav-school-name">18 - Maktab</p>
+          </div>
+        </a>
         <nav className="nav">
-          <a href="#">
-            <div className="nav__link">
-              <img
-                width={100}
-                src={HeaderLogo}
-                alt="header-logo"
-                className="nav-intro"
-                title="18-maktab logo"
-              />
-              <p className="nav-school-city">Bekabod shahar</p>
-              <p className="nav-school-name">18 - Maktab</p>
-            </div>
-          </a>
           <ul className="nav__list">
             <li className="nav__item">
               <a className="nav__item-link" href="#">
@@ -45,10 +49,19 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <a className="nav-reception" href="#" role="button">
-            Qabulxona
-          </a>
         </nav>
+        <a className="nav-reception" href="#" role="button">
+          Qabulxona
+        </a>
+        <Button
+          type="button"
+          className={`header-bars ${isOpenMenu && "header-bars--times"}`}
+          onClick={() => setIsOpenMenu((prevState) => !prevState)}
+        >
+          <span className="header-bars__stick"></span>
+          <span className="header-bars__stick"></span>
+          <span className="header-bars__stick"></span>
+        </Button>
       </div>
     </header>
   );

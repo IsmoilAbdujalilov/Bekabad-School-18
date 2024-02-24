@@ -4,4 +4,72 @@
   position: sticky;
   padding: 10px 0px;
   background-color: #ffffff;
+  &__container {
+    @include flexLayout(flex, space-between, center, none, row nowrap);
+  }
+  &__link {
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+  }
+  &-intro {
+    width: 85px;
+  }
+  &-bars {
+    display: none;
+    cursor: pointer;
+    @include Button(transparent, none, none);
+    @include sm {
+      display: block;
+    }
+    &__stick {
+      height: 2px;
+      width: 30px;
+      display: block;
+      margin-bottom: 5px;
+      background-color: #1f263399;
+      transition: transform 300ms linear, width 300ms linear,
+        opacity 300ms linear;
+      -o-transition: transform 300ms linear, width 300ms linear,
+        opacity 300ms linear;
+      -ms-transition: transform 300ms linear, width 300ms linear,
+        opacity 300ms linear;
+      -moz-transition: transform 300ms linear, width 300ms linear,
+        opacity 300ms linear;
+      -webkit-transition: transform 300ms linear, width 300ms linear,
+        opacity 300ms linear;
+      &:nth-child(1) {
+        width: 15px;
+      }
+      &:nth-child(2) {
+        width: 25px;
+      }
+    }
+    &--times span {
+      &:nth-child(1) {
+        width: 30px;
+        transform: rotate(-45deg) translateX(-10px);
+        -o-transform: rotate(-45deg) translateX(-10px);
+        -ms-transform: rotate(-45deg) translateX(-10px);
+        -moz-transform: rotate(-45deg) translateX(-10px);
+        -webkit-transform: rotate(-45deg) translateX(-10px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+      }
+      &:nth-child(3) {
+        width: 30px;
+        transform: rotate(45deg) translateX(-10px);
+        -o-transform: rotate(45deg) translateX(-10px);
+        -ms-transform: rotate(45deg) translateX(-10px);
+        -moz-transform: rotate(45deg) translateX(-10px);
+        -webkit-transform: rotate(45deg) translateX(-10px);
+      }
+    }
+  }
 }
