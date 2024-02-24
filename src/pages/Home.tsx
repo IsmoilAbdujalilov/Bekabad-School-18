@@ -13,8 +13,8 @@ const Home = () => {
     <>
       <Hero />
       <SchoolNumbers />
-      {/* <SchoolInfo />
-      <SchoolNews /> */}
+      <SchoolInfo />
+      {/* <SchoolNews /> */}
       {/* <SchoolActiveWork /> */}
       {/* <SchoolLibrary /> */}
       {/* <SchoolTeachers /> */}

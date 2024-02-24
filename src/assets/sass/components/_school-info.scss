@@ -1,0 +1,66 @@
+.school-info {
+  padding: 0px 0px 120px 0px;
+  &-images {
+    @include gridLayout(grid, 2, flex-start, flex-start, 20px);
+    &__item {
+      width: 305px;
+      height: 325px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      &-img {
+        object-fit: cover;
+      }
+    }
+    &__item:first-child img {
+      border-radius: 100px 0px 0px 0px;
+      -o-border-radius: 100px 0px 0px 0px;
+      -ms-border-radius: 100px 0px 0px 0px;
+      -moz-border-radius: 100px 0px 0px 0px;
+      -webkit-border-radius: 100px 0px 0px 0px;
+    }
+    &__item:last-child img {
+      border-radius: 0px 0px 100px 0px;
+      -o-border-radius: 0px 0px 100px 0px;
+      -ms-border-radius: 0px 0px 100px 0px;
+      -moz-border-radius: 0px 0px 100px 0px;
+      -webkit-border-radius: 0px 0px 100px 0px;
+    }
+  }
+  &__container {
+    @include flexLayout(flex, space-between, center, none, row nowrap);
+  }
+  &__content {
+    max-width: 500px;
+    &-title {
+      margin-bottom: 30px;
+      @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+    }
+    &-horizontal-rule {
+      height: 3px;
+      width: 100%;
+      margin-bottom: 45px;
+      background-color: #1f2633;
+    }
+    &-text {
+      margin-bottom: 35px;
+      @include headingFonts(#1f2633, 16px, 500, none);
+    }
+    &-btn {
+      display: inline-block;
+      @include Button(#003057, 1px solid #003057, 8px, 16px 70px, none);
+      @include headingFonts(#f5f5f5, 16px, 600, 19.5px, none);
+      transition: background-color 300ms linear, color 300ms linear;
+      -webkit-transition: background-color 300ms linear, color 300ms linear;
+      -moz-transition: background-color 300ms linear, color 300ms linear;
+      -ms-transition: background-color 300ms linear, color 300ms linear;
+      -o-transition: background-color 300ms linear, color 300ms linear;
+      &:hover {
+        color: #003057;
+        background-color: transparent;
+      }
+    }
+  }
+}

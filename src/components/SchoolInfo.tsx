@@ -1,3 +1,4 @@
+import Button from "./Button";
 import {
   SchoolInfoImg1,
   SchoolInfoImg2,
@@ -8,7 +9,7 @@ import {
 const SchoolInfo = () => {
   return (
     <section className="school-info">
-      <div className="container">
+      <div className="school-info__container container">
         <div className="school-info__content">
           <h2 className="school-info__content-title">Maktabimiz haqida</h2>
           <hr className="school-info__content-horizontal-rule" />
@@ -21,13 +22,15 @@ const SchoolInfo = () => {
             unumdorligini yanada oshirish va samarali tashkil 2019-yil
             30-dekabrdagi 1202-sonli{" "}
           </p>
-          <a className="school-info__content-btn" href="#" role="button">
+          <Button type="button" className="school-info__content-btn">
             Batafsil
-          </a>
+          </Button>
         </div>
         <ul className="school-info-images">
           <li className="school-info-images__item">
             <img
+              width={305}
+              height={325}
               src={SchoolInfoImg1}
               title="18 - maktab haqida"
               alt="18 - maktab haqida 1 - rasm"
@@ -36,6 +39,8 @@ const SchoolInfo = () => {
           </li>
           <li className="school-info-images__item">
             <img
+              width={305}
+              height={325}
               src={SchoolInfoImg2}
               title="18 - maktab haqida"
               alt="18 - maktab haqida 2 - rasm"
@@ -44,6 +49,8 @@ const SchoolInfo = () => {
           </li>
           <li className="school-info-images__item">
             <img
+              width={305}
+              height={325}
               src={SchoolInfoImg3}
               title="18 - maktab haqida"
               alt="18 - maktab haqida 3 - rasm"
@@ -52,6 +59,8 @@ const SchoolInfo = () => {
           </li>
           <li className="school-info-images__item">
             <img
+              width={305}
+              height={325}
               src={SchoolInfoImg4}
               title="18 - maktab haqida"
               alt="18 - maktab haqida 4 - rasm"
