@@ -11,13 +11,13 @@ import {
 const Home = () => {
   return (
     <>
-      {/* <Hero />
-      <SchoolNumbers />
+      <Hero />
+      {/* <SchoolNumbers />
       <SchoolInfo />
       <SchoolNews /> */}
       {/* <SchoolActiveWork /> */}
       {/* <SchoolLibrary /> */}
-      <SchoolTeachers />
+      {/* <SchoolTeachers /> */}
     </>
   );
 };
