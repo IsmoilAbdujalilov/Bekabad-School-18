@@ -1,0 +1,52 @@
+.nav {
+  @include flexLayout(flex, space-between, center, none, row nowrap);
+  &-intro {
+    width: 85px;
+  }
+  &__link {
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+  }
+  &-school-city {
+    @include headingFonts(#1f263399, 14px, 400, 12px, none);
+  }
+  &-school-name {
+    @include headingFonts(#1f2633, 22px, 600, 1px, none);
+  }
+  &__item {
+    &-link {
+      position: relative;
+
+      @include headingFonts(#1f2633, 16px, 600, 19.5px, none);
+      &::after {
+        left: 0px;
+        width: 0%;
+        content: "";
+        height: 2px;
+        bottom: -5px;
+        position: absolute;
+        background-color: #1f2633;
+        transition: width 300ms linear;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__list {
+    @include flexLayout(flex, flex-start, center, 40px, nowrap row);
+  }
+  &-reception {
+    @include headingFonts(#ffffff, 18px, 600, 21.94px, none);
+    @include Button(#003057, 1px solid #003057, 8px, 25px 50px, none);
+    transition: color 300ms linear, background-color 300ms linear;
+    &:hover {
+      color: #003057;
+      background-color: transparent;
+    }
+  }
+}
