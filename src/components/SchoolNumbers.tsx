@@ -8,10 +8,12 @@ const SchoolNumbers = () => {
           <h2 className="school-numbers__titles-heading">
             Maktabimiz raqamlarda
           </h2>
-          <hr className="school-numbers__title-horizontal-rule" />
+          <hr className="school-numbers__titles-horizontal-rule" />
           <ul className="school-numbers__list">
             <li className="school-numbers__item">
               <img
+                width={76}
+                height={76}
                 src={Students}
                 alt="18 - maktab o'quvchilar soni"
                 className="school-numbers__item-icon"
@@ -25,6 +27,8 @@ const SchoolNumbers = () => {
             </li>
             <li className="school-numbers__item">
               <img
+                width={76}
+                height={76}
                 src={Teachers}
                 alt="18 - maktab o'qutuvchilar soni"
                 className="school-numbers__item-icon"
@@ -38,6 +42,8 @@ const SchoolNumbers = () => {
             </li>
             <li className="school-numbers__item">
               <img
+                width={76}
+                height={76}
                 src={Olimpia}
                 alt="18 - maktab olimpia g'oliblari"
                 className="school-numbers__item-icon"
@@ -51,6 +57,8 @@ const SchoolNumbers = () => {
             </li>
             <li className="school-numbers__item">
               <img
+                width={76}
+                height={76}
                 src={BeStudents}
                 alt="18 - maktab talaba bo'lganlar"
                 className="school-numbers__item-icon"
