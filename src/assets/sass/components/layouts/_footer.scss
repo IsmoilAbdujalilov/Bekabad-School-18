@@ -1,0 +1,113 @@
+.footer {
+  padding: 10px 0px 0px 0px;
+  background-color: #003057;
+  &-horizontal-rule {
+    margin-bottom: 28px;
+  }
+  &-navigation {
+    text-align: center;
+    &-logo {
+      height: 88px;
+      width: 101px;
+      margin-bottom: 32px;
+    }
+    &__list {
+      margin-bottom: 32px;
+
+      @include flexLayout(flex, center, center, 30px, row nowrap);
+    }
+    &__item {
+      position: relative;
+      &::after {
+        left: 0px;
+        width: 0%;
+        content: "";
+        height: 2px;
+        bottom: -5px;
+        position: absolute;
+        background-color: #ffffff;
+        transition: width 300ms linear;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+      &-link {
+        @include headingFonts(#ffffff, 14px, 600, 17.07px, none);
+      }
+    }
+  }
+  &-medias {
+    margin-bottom: 30px;
+    @include flexLayout(flex, center, center, 20px, row nowrap);
+    &__item {
+      &-img {
+        width: 24px;
+        height: 24px;
+        transition: transform 300ms linear;
+        -webkit-transition: transform 300ms linear;
+        -moz-transition: transform 300ms linear;
+        -ms-transition: transform 300ms linear;
+        -o-transition: transform 300ms linear;
+        &:hover {
+          transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  &-contact {
+    margin-bottom: 87px;
+    @include flexLayout(flex, center, center, 80px, row nowrap);
+    &__block {
+      @include flexLayout(flex, flex-start, center, 12px, row nowrap);
+    }
+    &__item {
+      transition: opacity 300ms linear;
+      -webkit-transition: opacity 300ms linear;
+      -moz-transition: opacity 300ms linear;
+      -ms-transition: opacity 300ms linear;
+      -o-transition: opacity 300ms linear;
+      &:hover {
+        opacity: 0.8;
+      }
+      &-icon {
+        width: 32px;
+        height: 32px;
+      }
+      &-text {
+        @include headingFonts(#ffffff, 18px, 500, 27px, none);
+      }
+    }
+  }
+  &-bottom {
+    padding: 10px 0px;
+    background-color: #28446b;
+    &__container {
+      @include flexLayout(flex, space-between, center, none, nowrap row);
+    }
+
+    &-text {
+      @include headingFonts(#506c93, 14px, 500, 21px, none);
+    }
+    &__link {
+      @include flexLayout(flex, flex-start, center, 10px, row nowrap);
+      &-text {
+        @include headingFonts(#506c93, 14px, 500, 21px, none);
+      }
+      &-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+  }
+}

@@ -14,35 +14,39 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <nav className="footer-navigation">
-          <img
-            src={FooterLogo}
-            alt="18 - Maktab Logo"
-            title="18 - Maktab Logo"
-            className="footer-navigation-logo"
-          />
+          <a href="#">
+            <img
+              src={FooterLogo}
+              height={88}
+              width={101}
+              alt="18 - Maktab Logo"
+              title="18 - Maktab Logo"
+              className="footer-navigation-logo"
+            />
+          </a>
           <ul className="footer-navigation__list">
-            <li className="footer__item">
-              <a className="footer__item-link" href="#">
+            <li className="footer-navigation__item">
+              <a className="footer-navigation__item-link" href="#">
                 Maktab haqida
               </a>
             </li>
-            <li className="footer__item">
-              <a className="footer__item-link" href="#">
+            <li className="footer-navigation__item">
+              <a className="footer-navigation__item-link" href="#">
                 Bizning kutubxona
               </a>
             </li>
-            <li className="footer__item">
-              <a className="footer__item-link" href="#">
+            <li className="footer-navigation__item">
+              <a className="footer-navigation__item-link" href="#">
                 O’qituvchilar
               </a>
             </li>
-            <li className="footer__item">
-              <a className="footer__item-link" href="#">
+            <li className="footer-navigation__item">
+              <a className="footer-navigation__item-link" href="#">
                 Yangiliklar
               </a>
             </li>
-            <li className="footer__item">
-              <a className="footer__item-link" href="#">
+            <li className="footer-navigation__item">
+              <a className="footer-navigation__item-link" href="#">
                 Kurslar
               </a>
             </li>
@@ -51,6 +55,8 @@ const Footer = () => {
             <li className="footer-medias__item">
               <a href="#">
                 <img
+                  width={24}
+                  height={24}
                   src={Instagram}
                   alt="18 - maktab instagram"
                   className="footer-medias__item-img"
@@ -60,6 +66,8 @@ const Footer = () => {
             <li className="footer-medias__item">
               <a href="#">
                 <img
+                  width={24}
+                  height={24}
                   src={Facebook}
                   alt="18 - maktab facebook"
                   className="footer-medias__item-img"
@@ -69,6 +77,8 @@ const Footer = () => {
             <li className="footer-medias__item">
               <a href="#">
                 <img
+                  width={24}
+                  height={24}
                   src={Telegram}
                   alt="18 - maktab telegram"
                   className="footer-medias__item-img"
@@ -76,17 +86,21 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <hr className="nav-horizontal-rule" />
+          <hr className="footer-horizontal-rule" />
           <ul className="footer-contact">
             <li className="footer-contact__item">
               <a href="tel:+998 95 412 00 05">
-                <img
-                  src={Phone}
-                  className="footer-contact__item-icon"
-                  alt="18 - maktab phone-number"
-                />
-                <span className="footer-contact__item-text">
-                  +998 95 412 00 05
+                <span className="footer-contact__block">
+                  <img
+                    width={32}
+                    height={32}
+                    src={Phone}
+                    className="footer-contact__item-icon"
+                    alt="18 - maktab phone-number"
+                  />
+                  <span className="footer-contact__item-text">
+                    +998 95 412 00 05
+                  </span>
                 </span>
               </a>
             </li>
@@ -95,29 +109,41 @@ const Footer = () => {
                 target="_blank"
                 href="https://www.google.com/maps?cid=4244655225150770821"
               >
-                <img
-                  src={Location}
-                  className="footer-contact__item-icon"
-                  alt="18 - Maktab location address"
-                />
-                <span className="footer-contact__item-text">
-                  Toshkent viloyati, Bekabod shahar, 18 - Maktab
+                <span className="footer-contact__block">
+                  <img
+                    width={32}
+                    height={32}
+                    src={Location}
+                    className="footer-contact__item-icon"
+                    alt="18 - Maktab location address"
+                  />
+                  <span className="footer-contact__item-text">
+                    Toshkent viloyati, Bekabod shahar, 18 - Maktab
+                  </span>
                 </span>
               </a>
             </li>
             <li className="footer-contact__item">
               <a target="_blank" href="mailto:ismoilbek20050421@gmail.com">
-                <img
-                  src={Mail}
-                  className="footer-contact__item-icon"
-                  alt="18 - Maktab Email"
-                />
-                ismoilbek20050421@gmail.com
+                <span className="footer-contact__block">
+                  <img
+                    width={32}
+                    height={32}
+                    src={Mail}
+                    className="footer-contact__item-icon"
+                    alt="18 - Maktab Email"
+                  />
+                  <span className="footer-contact__item-text">
+                    ismoilbek20050421@gmail.com
+                  </span>
+                </span>
               </a>
             </li>
           </ul>
         </nav>
-        <div className="footer-bottom">
+      </div>
+      <div className="footer-bottom">
+        <div className="footer-bottom__container container">
           <span className="footer-bottom-text">
             18-maktab &copy; {new Date().getFullYear()} Barcha huquqlar
             himoyalangan
@@ -127,6 +153,8 @@ const Footer = () => {
               Sayt ishlab chiquvchisi
             </span>
             <img
+              width={50}
+              height={50}
               alt="Coders Uz"
               src={SiteDeveloper}
               className="footer-bottom__link-img"
