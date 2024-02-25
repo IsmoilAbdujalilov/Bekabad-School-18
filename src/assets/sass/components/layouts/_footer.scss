@@ -34,6 +34,7 @@
         }
       }
       &-link {
+        font-family: "Poppins", sans-serif;
         @include headingFonts(#ffffff, 14px, 600, 17.07px, none);
       }
     }
@@ -52,10 +53,10 @@
         -o-transition: transform 300ms linear;
         &:hover {
           transform: rotate(360deg);
-          -webkit-transform: rotate(360deg);
-          -moz-transform: rotate(360deg);
-          -ms-transform: rotate(360deg);
           -o-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
         }
       }
     }
@@ -68,10 +69,10 @@
     }
     &__item {
       transition: opacity 300ms linear;
-      -webkit-transition: opacity 300ms linear;
-      -moz-transition: opacity 300ms linear;
-      -ms-transition: opacity 300ms linear;
       -o-transition: opacity 300ms linear;
+      -ms-transition: opacity 300ms linear;
+      -moz-transition: opacity 300ms linear;
+      -webkit-transition: opacity 300ms linear;
       &:hover {
         opacity: 0.8;
       }
@@ -80,6 +81,7 @@
         height: 32px;
       }
       &-text {
+        font-family: "Poppins", sans-serif;
         @include headingFonts(#ffffff, 18px, 500, 27px, none);
       }
     }
@@ -92,21 +94,23 @@
     }
 
     &-text {
+      font-family: "Poppins", sans-serif;
       @include headingFonts(#506c93, 14px, 500, 21px, none);
     }
     &__link {
       @include flexLayout(flex, flex-start, center, 10px, row nowrap);
       &-text {
+        font-family: "Poppins", sans-serif;
         @include headingFonts(#506c93, 14px, 500, 21px, none);
       }
       &-img {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
         -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
       }
     }
   }
