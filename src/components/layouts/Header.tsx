@@ -50,13 +50,13 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <a className="nav-reception" href="#" role="button">
+        <Button className="nav-reception" type="button">
           Qabulxona
-        </a>
+        </Button>
         <Button
           type="button"
-          className={`header-bars ${isOpenMenu && "header-bars--times"}`}
           onClick={() => setIsOpenMenu((prevState) => !prevState)}
+          className={`header-bars ${isOpenMenu && "header-bars--times"}`}
         >
           <span className="header-bars__stick"></span>
           <span className="header-bars__stick"></span>
