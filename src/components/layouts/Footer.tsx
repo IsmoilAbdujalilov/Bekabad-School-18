@@ -148,7 +148,11 @@ const Footer = () => {
             18-maktab &copy; {new Date().getFullYear()} Barcha huquqlar
             himoyalangan
           </span>
-          <a className="footer-bottom__link" href="https://t.me/CODERS_UZZ">
+          <a
+            title="Coders Uz"
+            href="https://t.me/CODERS_UZZ"
+            className="footer-bottom__link"
+          >
             <span className="footer-bottom__link-text">
               Sayt ishlab chiquvchisi
             </span>
