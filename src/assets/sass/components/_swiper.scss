@@ -1,0 +1,18 @@
+.swiper-button-disabled {
+  @include Button(#f1f1f1 !important, none, 50%, 20px, none);
+  svg {
+    path {
+      stroke: #696969 !important;
+    }
+  }
+}
+
+.swiper-button-next {
+  @include Button(#003057, none, 50%, 20px, none);
+  @include flexLayout(flex, center, center, none, row nowrap);
+  svg {
+    path {
+      stroke: #ffffff !important;
+    }
+  }
+}

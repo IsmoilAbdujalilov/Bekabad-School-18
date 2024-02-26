@@ -1,3 +1,4 @@
+import "swiper/css";
 import App from "./App.tsx";
 import "./assets/sass/index.scss";
 import ReactDOM from "react-dom/client";

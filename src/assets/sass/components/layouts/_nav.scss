@@ -1,7 +1,6 @@
 .nav {
   @include flexLayout(flex, space-between, center, none, row nowrap);
 
-
   &-school-city {
     @include headingFonts(#1f263399, 14px, 400, 12px, none);
   }

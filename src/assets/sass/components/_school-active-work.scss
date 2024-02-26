@@ -1,0 +1,147 @@
+.school-active-work {
+  margin-bottom: 120px;
+  &__top {
+    &-heading {
+      margin-bottom: 30px;
+      @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+    }
+    &-horizontal-rule {
+      height: 3px;
+      width: 387px;
+      margin-bottom: 45px;
+      background-color: #1f2633;
+    }
+  }
+  &__slider {
+    position: relative;
+  }
+  &__item {
+    width: 100%;
+    &-img {
+      height: 589px;
+      object-fit: cover;
+    }
+  }
+  &__buttons {
+    z-index: 1;
+    right: 24px;
+    bottom: 24px;
+    position: absolute;
+    @include flexLayout(flex, flex-start, center, 8px, row nowrap);
+  }
+  &__btn {
+    z-index: 1;
+    @include Button(#003057, none, 50%, 20px, none);
+    @include flexLayout(flex, center, center, none, row nowrap);
+    svg {
+      path {
+        stroke: #ffffff;
+      }
+    }
+    &:nth-child(1) {
+      transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__footer {
+    top: -5px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 35px;
+    background-color: #003057;
+    border-radius: 0px 0px 8px 8px;
+    -o-border-radius: 0px 0px 8px 8px;
+    -ms-border-radius: 0px 0px 8px 8px;
+    -moz-border-radius: 0px 0px 8px 8px;
+    -webkit-border-radius: 0px 0px 8px 8px;
+  }
+  &__list {
+    @include flexLayout(flex, space-between, center, none, row nowrap);
+  }
+  &__block {
+    width: 100%;
+    position: relative;
+    padding: 30px 60px 30px 60px;
+    @include flexLayout(flex, flex-start, flex-start, 36px, row nowrap);
+    &::after {
+      top: 0px;
+      width: 1px;
+      right: 0px;
+      content: "";
+      height: 100%;
+      position: absolute;
+      background-color: #00264d;
+    }
+  }
+  &__bg {
+    width: 77px;
+    height: 77px;
+    padding: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #ffffff;
+    @include flexLayout(flex, center, center, none, row nowrap);
+    &-icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  &__content {
+    &-heading {
+      margin-bottom: 8px;
+      @include headingFonts(#ffffff, 20px, 600, 24.38px, none);
+    }
+    &-text {
+      @include headingFonts(#49658c, 14px, 500, 17.07px, none);
+    }
+  }
+  &__bottom {
+    @include flexLayout(flex, center, center, none, row nowrap);
+  }
+  &__bottom-btn {
+    @include flexLayout(flex, center, center, 8px, row nowrap);
+    @include headingFonts(#ffffff, 18px, 400, 21.94px, none);
+    @include Button(#003057, 1px solid #003057, 5px, 12px 52px, none);
+    transition: color 300ms linear, background-color 300ms linear;
+    -webkit-transition: color 300ms linear, background-color 300ms linear;
+    -moz-transition: color 300ms linear, background-color 300ms linear;
+    -ms-transition: color 300ms linear, background-color 300ms linear;
+    -o-transition: color 300ms linear, background-color 300ms linear;
+    svg {
+      path {
+        transition: stroke 300ms linear;
+        -o-transition: stroke 300ms linear;
+        -ms-transition: stroke 300ms linear;
+        -moz-transition: stroke 300ms linear;
+        -webkit-transition: stroke 300ms linear;
+      }
+    }
+    &:hover {
+      color: #003057;
+      background-color: transparent;
+      svg {
+        path {
+          stroke: #003057;
+        }
+      }
+    }
+  }
+  transition: color 300ms linear, background-color 300ms linear;
+  -webkit-transition: color 300ms linear, background-color 300ms linear;
+  -moz-transition: color 300ms linear, background-color 300ms linear;
+  -ms-transition: color 300ms linear, background-color 300ms linear;
+  -o-transition: color 300ms linear, background-color 300ms linear;
+}
