@@ -17,7 +17,7 @@ const Home = () => {
       <SchoolNews />
       <SchoolActiveWork />
       <SchoolLibrary />
-      {/* <SchoolTeachers /> */}
+      <SchoolTeachers />
     </>
   );
 };

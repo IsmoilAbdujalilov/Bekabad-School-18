@@ -1,5 +1,7 @@
 import Button from "./Button";
+import { Navigation } from "swiper/modules";
 import { ArrowRight } from "../assets/images/svg";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { SchoolTeacher } from "../assets/images/jpg";
 
 const SchoolTeachers = () => {
@@ -13,8 +15,11 @@ const SchoolTeachers = () => {
             </h2>
             <hr className="school-teachers__small-box-horizontal-rule" />
           </div>
-          <div className="school-teachers__small-box">
-            <Button className="school-teachers__small-box-btn" type="button">
+          <div className="school-teachers__buttons">
+            <Button
+              type="button"
+              className="school-teachers__buttons-btn school-teachers__buttons-btn--left"
+            >
               <svg
                 width="24"
                 height="24"
@@ -31,7 +36,10 @@ const SchoolTeachers = () => {
                 />
               </svg>
             </Button>
-            <Button className="school-teachers__small-box-btn" type="button">
+            <Button
+              type="button"
+              className="school-teachers__buttons-btn school-teachers__buttons-btn--right"
+            >
               <svg
                 width="24"
                 height="24"
@@ -50,66 +58,138 @@ const SchoolTeachers = () => {
             </Button>
           </div>
         </div>
-        <ul className="school-teachers__list">
-          <li className="school-teachers__item">
-            <img
-              src={SchoolTeacher}
-              alt="school-teacher"
-              title="school-teacher"
-              className="school-teachers__item-img"
-            />
-            <div className="school-teachers__content">
-              <h3 className="school-teachers__content-heading">
-                Abdullayeva Rano Sharopovna
-              </h3>
-              <span className="school-teachers__content-job-name">
-                Direktor
-              </span>
-            </div>
-          </li>
-          <li className="school-teachers__item">
-            <img
-              src={SchoolTeacher}
-              alt="school-teacher"
-              title="school-teacher"
-              className="school-teachers__item-img"
-            />
-            <div className="school-teachers__content">
-              <h3 className="school-teachers__content-heading">
-                Abdullayeva Rano Sharopovna
-              </h3>
-              <span className="school-teachers__content-job-name">
-                Direktor
-              </span>
-            </div>
-          </li>
-          <li className="school-teachers__item">
-            <img
-              src={SchoolTeacher}
-              alt="school-teacher"
-              title="school-teacher"
-              className="school-teachers__item-img"
-            />
-            <div className="school-teachers__content">
-              <h3 className="school-teachers__content-heading">
-                Abdullayeva Rano Sharopovna
-              </h3>
-              <span className="school-teachers__content-job-name">
-                Direktor
-              </span>
-            </div>
-          </li>
-        </ul>
+        <Swiper
+          navigation={{
+            prevEl: ".school-teachers__buttons-btn--left",
+            nextEl: ".school-teachers__buttons-btn--right",
+          }}
+          spaceBetween={20}
+          slidesPerView={3}
+          modules={[Navigation]}
+          className="school-teachers__list"
+        >
+          <SwiperSlide>
+            <li className="school-teachers__item">
+              <img
+                width={413}
+                height={575}
+                src={SchoolTeacher}
+                alt="school-teacher"
+                title="school-teacher"
+                className="school-teachers__item-img"
+              />
+              <div className="school-teachers__content">
+                <h3 className="school-teachers__content-heading">
+                  Abdullayeva Rano Sharopovna
+                </h3>
+                <span className="school-teachers__content-job-name">
+                  Direktor
+                </span>
+              </div>
+            </li>
+          </SwiperSlide>
+          <SwiperSlide>
+            <li className="school-teachers__item">
+              <img
+                width={413}
+                height={575}
+                src={SchoolTeacher}
+                alt="school-teacher"
+                title="school-teacher"
+                className="school-teachers__item-img"
+              />
+              <div className="school-teachers__content">
+                <h3 className="school-teachers__content-heading">
+                  Abdullayeva Rano Sharopovna
+                </h3>
+                <span className="school-teachers__content-job-name">
+                  Direktor
+                </span>
+              </div>
+            </li>
+          </SwiperSlide>
+          <SwiperSlide>
+            <li className="school-teachers__item">
+              <img
+                width={413}
+                height={575}
+                src={SchoolTeacher}
+                alt="school-teacher"
+                title="school-teacher"
+                className="school-teachers__item-img"
+              />
+              <div className="school-teachers__content">
+                <h3 className="school-teachers__content-heading">
+                  Abdullayeva Rano Sharopovna
+                </h3>
+                <span className="school-teachers__content-job-name">
+                  Direktor
+                </span>
+              </div>
+            </li>
+          </SwiperSlide>
+          <SwiperSlide>
+            <li className="school-teachers__item">
+              <img
+                width={413}
+                height={575}
+                src={SchoolTeacher}
+                alt="school-teacher"
+                title="school-teacher"
+                className="school-teachers__item-img"
+              />
+              <div className="school-teachers__content">
+                <h3 className="school-teachers__content-heading">
+                  Abdullayeva Rano Sharopovna
+                </h3>
+                <span className="school-teachers__content-job-name">
+                  Direktor
+                </span>
+              </div>
+            </li>
+          </SwiperSlide>
+          <SwiperSlide>
+            <li className="school-teachers__item">
+              <img
+                width={413}
+                height={575}
+                src={SchoolTeacher}
+                alt="school-teacher"
+                title="school-teacher"
+                className="school-teachers__item-img"
+              />
+              <div className="school-teachers__content">
+                <h3 className="school-teachers__content-heading">
+                  Abdullayeva Rano Sharopovna
+                </h3>
+                <span className="school-teachers__content-job-name">
+                  Direktor
+                </span>
+              </div>
+            </li>
+          </SwiperSlide>
+        </Swiper>
         <div className="school-teachers__all">
           <Button type="button" className="school-teachers__all-btn">
             Barchasi
-            <img
-              height={8}
-              width={14}
-              src={ArrowRight}
-              alt="arrow-icon"
-              className="school-teachers__all-icon"
-            />
+            <svg
+              width="16"
+              height="10"
+              fill="none"
+              viewBox="0 0 16 10"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 5H15H1Z" fill="#ffffff" />
+              <path d="M11 9L15 5L11 9Z" fill="#ffffff" />
+              <path d="M11 1L15 5L11 1Z" fill="#ffffff" />
+              <path
+                stroke-width="2"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M1 5H15M15 5L11 9M15 5L11 1"
+              />
+            </svg>
           </Button>
         </div>
       </div>

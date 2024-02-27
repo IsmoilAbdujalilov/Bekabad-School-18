@@ -18,7 +18,6 @@
   &__buttons {
     @include flexLayout(flex, flex-start, center, 8px, row nowrap);
     &-btn {
-      z-index: 1;
       @include Button(#003057, none, 50%, 20px, none);
       @include flexLayout(flex, center, center, none, row nowrap);
       svg {
