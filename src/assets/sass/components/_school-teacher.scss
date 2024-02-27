@@ -1,0 +1,7 @@
+.school-teachers {
+  &__small-box {
+    &-heading {
+      @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+    }
+  }
+}

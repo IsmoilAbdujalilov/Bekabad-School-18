@@ -6,13 +6,3 @@
     }
   }
 }
-
-.swiper-button-next {
-  @include Button(#003057, none, 50%, 20px, none);
-  @include flexLayout(flex, center, center, none, row nowrap);
-  svg {
-    path {
-      stroke: #ffffff !important;
-    }
-  }
-}

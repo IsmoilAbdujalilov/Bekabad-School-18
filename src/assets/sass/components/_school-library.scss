@@ -1,0 +1,108 @@
+.school-library {
+  margin-bottom: 120px;
+  &__top {
+    @include flexLayout(flex, space-between, flex-start, none, row nowrap);
+  }
+  &__small-box {
+    &-heading {
+      margin-bottom: 30px;
+      @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+    }
+    &-horizontal-rule {
+      height: 3px;
+      width: 387px;
+      margin-bottom: 60px;
+      background-color: #1f2633;
+    }
+  }
+  &__buttons {
+    @include flexLayout(flex, flex-start, center, 8px, row nowrap);
+    &-btn {
+      z-index: 1;
+      @include Button(#003057, none, 50%, 20px, none);
+      @include flexLayout(flex, center, center, none, row nowrap);
+      svg {
+        path {
+          stroke: #ffffff;
+        }
+      }
+      &:nth-child(1) {
+        transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  &__list {
+    margin-bottom: 40px;
+    @include flexLayout(flex, space-between, center, 20px, row nowrap);
+  }
+  &__item {
+    height: 441px;
+    overflow: hidden;
+    border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    &-img {
+      object-fit: cover;
+      border-radius: 8px;
+      -o-border-radius: 8px;
+      -ms-border-radius: 8px;
+      object-position: center;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      transition: transform 300ms linear;
+      -o-transition: transform 300ms linear;
+      -ms-transition: transform 300ms linear;
+      -moz-transition: transform 300ms linear;
+      -webkit-transition: transform 300ms linear;
+      &:hover {
+        transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+      }
+    }
+  }
+  &__bottom {
+    @include flexLayout(flex, center, center, none, row nowrap);
+    &-btn {
+      @include flexLayout(flex, center, center, 8px, row nowrap);
+      @include headingFonts(#ffffff, 18px, 400, 21.94px, none);
+      @include Button(#003057, 1px solid #003057, 5px, 12px 52px, none);
+      transition: color 300ms linear, background-color 300ms linear;
+      -webkit-transition: color 300ms linear, background-color 300ms linear;
+      -moz-transition: color 300ms linear, background-color 300ms linear;
+      -ms-transition: color 300ms linear, background-color 300ms linear;
+      -o-transition: color 300ms linear, background-color 300ms linear;
+      svg {
+        path {
+          transition: stroke 300ms linear;
+          -o-transition: stroke 300ms linear;
+          -ms-transition: stroke 300ms linear;
+          -moz-transition: stroke 300ms linear;
+          -webkit-transition: stroke 300ms linear;
+        }
+      }
+      &:hover {
+        color: #003057;
+        background-color: transparent;
+        svg {
+          path {
+            stroke: #003057;
+          }
+        }
+      }
+    }
+  }
+}
