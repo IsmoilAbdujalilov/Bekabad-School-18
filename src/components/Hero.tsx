@@ -1,4 +1,5 @@
-import { Button } from ".";
+import Button from "./Button";
+import { Play } from "../assets/images/svg";
 import {
   HeroImg1,
   HeroImg2,
@@ -6,7 +7,6 @@ import {
   HeroImg4,
   HeroImg5,
 } from "../assets/images/jpg";
-import { Play } from "../assets/images/svg";
 
 const Hero = () => {
   return (

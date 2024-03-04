@@ -30,16 +30,6 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a className="nav__item-link" href="#">
-                Bizning kutubxona
-              </a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__item-link" href="#">
-                O'qituvchilar
-              </a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__item-link" href="#">
                 Yangiliklar
               </a>
             </li>
@@ -48,11 +38,21 @@ const Header = () => {
                 Kurslar
               </a>
             </li>
+            <li className="nav__item">
+              <a className="nav__item-link" href="#">
+                Bizning kutubxona
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__item-link" href="#">
+                O'qituvchilar
+              </a>
+            </li>
           </ul>
         </nav>
-        <Button className="nav-reception" type="button">
+        {/* <Button className="nav-reception" type="button">
           Qabulxona
-        </Button>
+        </Button> */}
         <Button
           type="button"
           onClick={() => setIsOpenMenu((prevState) => !prevState)}

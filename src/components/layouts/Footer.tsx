@@ -32,22 +32,22 @@ const Footer = () => {
             </li>
             <li className="footer-navigation__item">
               <a className="footer-navigation__item-link" href="#">
-                Bizning kutubxona
-              </a>
-            </li>
-            <li className="footer-navigation__item">
-              <a className="footer-navigation__item-link" href="#">
-                O’qituvchilar
-              </a>
-            </li>
-            <li className="footer-navigation__item">
-              <a className="footer-navigation__item-link" href="#">
                 Yangiliklar
               </a>
             </li>
             <li className="footer-navigation__item">
               <a className="footer-navigation__item-link" href="#">
                 Kurslar
+              </a>
+            </li>
+            <li className="footer-navigation__item">
+              <a className="footer-navigation__item-link" href="#">
+                Bizning kutubxona
+              </a>
+            </li>
+            <li className="footer-navigation__item">
+              <a className="footer-navigation__item-link" href="#">
+                O’qituvchilar
               </a>
             </li>
           </ul>
