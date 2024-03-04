@@ -8,7 +8,7 @@ const Routes = () => {
       {/* <main className="main">
         <Outlet />
       </main> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

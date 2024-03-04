@@ -13,8 +13,10 @@
     }
     &__list {
       margin-bottom: 32px;
-
       @include flexLayout(flex, center, center, 30px, row nowrap);
+      @include defaultMediaQuery(615px) {
+        flex-direction: column;
+      }
     }
     &__item {
       position: relative;
@@ -42,6 +44,7 @@
   &-medias {
     margin-bottom: 30px;
     @include flexLayout(flex, center, center, 20px, row nowrap);
+
     &__item {
       &-img {
         width: 24px;
@@ -64,8 +67,17 @@
   &-contact {
     margin-bottom: 87px;
     @include flexLayout(flex, center, center, 80px, row nowrap);
+    @include defaultMediaQuery(1130px) {
+      gap: 20px;
+    }
+    @include defaultMediaQuery(1000px) {
+      flex-direction: column;
+    }
     &__block {
       @include flexLayout(flex, flex-start, center, 12px, row nowrap);
+      @include defaultMediaQuery(500px) {
+        gap: 5px;
+      }
     }
     &__item {
       transition: opacity 300ms linear;
@@ -79,10 +91,17 @@
       &-icon {
         width: 32px;
         height: 32px;
+        @include defaultMediaQuery(500px) {
+          width: 20px;
+          height: 20px;
+        }
       }
       &-text {
         font-family: "Poppins", sans-serif;
         @include headingFonts(#ffffff, 18px, 500, 27px, none);
+        @include defaultMediaQuery(500px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -91,6 +110,10 @@
     background-color: #28446b;
     &__container {
       @include flexLayout(flex, space-between, center, none, nowrap row);
+      @include defaultMediaQuery(545px) {
+        gap: 10px;
+        flex-direction: column;
+      }
     }
 
     &-text {
