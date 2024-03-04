@@ -22,7 +22,7 @@ const Header = () => {
           </div>
         </a>
         <nav className="nav">
-          <ul className="nav__list">
+          <ul className={`nav__list ${isOpenMenu && "nav__list--active"}`}>
             <li className="nav__item">
               <a className="nav__item-link" href="#">
                 Maktab haqida

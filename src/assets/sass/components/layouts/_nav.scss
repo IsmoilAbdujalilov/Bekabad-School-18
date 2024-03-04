@@ -3,15 +3,24 @@
 
   &-school-city {
     @include headingFonts(#1f263399, 14px, 400, 12px, none);
+    @include defaultMediaQuery(900px) {
+      font-size: 12px;
+    }
   }
   &-school-name {
     @include headingFonts(#1f2633, 22px, 600, 1px, none);
+    @include defaultMediaQuery(900px) {
+      font-size: 18px;
+    }
   }
   &__item {
     &-link {
       position: relative;
 
       @include headingFonts(#1f2633, 16px, 600, 19.5px, none);
+      @include defaultMediaQuery(900px) {
+        font-size: 14px;
+      }
       &::after {
         left: 0px;
         width: 0%;
@@ -32,6 +41,24 @@
 
   &__list {
     @include flexLayout(flex, flex-start, center, 40px, nowrap row);
+    @include defaultMediaQuery(900px) {
+      gap: 20px;
+    }
+    transition: left 300ms linear;
+
+    @include md {
+      top: 125px;
+      left: -100%;
+      width: 100%;
+      position: fixed;
+      min-height: 100%;
+      padding: 50px 0px;
+      background-color: #ffffff;
+      @include flexLayout(flex, flex-start, center, 30px, column nowrap);
+      &--active {
+        left: 0px;
+      }
+    }
   }
   &-reception {
     @include headingFonts(#ffffff, 18px, 600, 21.94px, none);

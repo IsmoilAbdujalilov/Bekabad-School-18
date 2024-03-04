@@ -14,12 +14,15 @@
   }
   &-intro {
     width: 85px;
+    @include defaultMediaQuery(900px) {
+      width: 75px;
+    }
   }
   &-bars {
     display: none;
     cursor: pointer;
     @include Button(transparent, none, none);
-    @include sm {
+    @include md {
       display: block;
     }
     &__stick {
