@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <>
       <Hero />
-      {/* <SchoolNumbers />
-      <SchoolInfo />
+      <SchoolNumbers />
+      {/* <SchoolInfo />
       <SchoolNews />
       <SchoolActiveWork />
       <SchoolLibrary />

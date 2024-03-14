@@ -1,19 +1,54 @@
 .school-numbers {
   padding: 120px 0px 135px 0px;
+  @include sm {
+    padding: 50px 0;
+  }
   &__titles {
     &-heading {
       margin-bottom: 30px;
       @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+      @include lg {
+        font-size: 28px;
+      }
+      @include sm {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+      @include defaultMediaQuery(400px){
+        font-size: 18px;
+      }
     }
     &-horizontal-rule {
       height: 3px;
-      width: 539px;
+      max-width: 539px;
       margin-bottom: 45px;
       background-color: #1f2633;
+      @include lg {
+        max-width: 450px;
+      }
+      @include sm {
+        max-width: 325px;
+        margin-bottom: 30px;
+      }
+      @include defaultMediaQuery(400px) {
+        max-width: 275px;
+      }
     }
   }
   &__list {
     @include gridLayout(grid, 4, none, center, 40px);
+    @include xl {
+      gap: 20px;
+    }
+    @include defaultMediaQuery(850px) {
+      @include gridLayout(grid, 2, none, center, 20px);
+    }
+    @include defaultMediaQuery(420px) {
+      gap: 5px;
+    }
+    @include defaultMediaQuery(400px) {
+      @include gridLayout(grid, 1, center, center, 20px);
+    }
   }
   &__item {
     padding: 24px;
@@ -30,12 +65,33 @@
     -webkit-transition: box-shadow 300ms linear;
     @include flexLayout(flex, flex-start, center, 24px, row nowrap);
 
+    @include lg {
+      padding: 12px;
+    }
+
     &:hover {
       box-shadow: 0px 4px 9.5px -3px #00000040;
     }
     &-icon {
       width: 76px;
       height: 76px;
+      object-fit: cover;
+      @include defaultMediaQuery(1235px) {
+        width: 56px;
+        height: 56px;
+      }
+      @include xl {
+        width: 46px;
+        height: 46px;
+      }
+      @include lg {
+        width: 36px;
+        height: 36px;
+      }
+      @include defaultMediaQuery(400px) {
+        width: 56px;
+        height: 56px;
+      }
     }
     &-results {
       position: relative;
@@ -51,9 +107,18 @@
     &-title {
       margin-bottom: 5px;
       @include headingFonts(#1f2633, 14px, 600, 17.07px, none);
+      @include defaultMediaQuery(1235px) {
+        font-size: 12px;
+      }
     }
     &-number {
       @include headingFonts(#003057, 32px, 700, 39.01px, none);
+      @include defaultMediaQuery(1235px) {
+        font-size: 25px;
+      }
+      @include lg {
+        font-size: 18px;
+      }
     }
   }
 }
