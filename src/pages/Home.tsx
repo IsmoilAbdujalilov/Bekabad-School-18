@@ -12,12 +12,12 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <SchoolNumbers />
+      {/* <SchoolNumbers />
       <SchoolInfo />
       <SchoolNews />
       <SchoolActiveWork />
       <SchoolLibrary />
-      <SchoolTeachers />
+      <SchoolTeachers /> */}
     </>
   );
 };

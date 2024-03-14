@@ -24,27 +24,47 @@ const Header = () => {
         <nav className="nav">
           <ul className={`nav__list ${isOpenMenu && "nav__list--active"}`}>
             <li className="nav__item">
-              <a className="nav__item-link" href="#">
+              <a
+                href="#"
+                className="nav__item-link"
+                onClick={() => setIsOpenMenu((prevState) => !prevState)}
+              >
                 Maktab haqida
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__item-link" href="#">
+              <a
+                href="#"
+                className="nav__item-link"
+                onClick={() => setIsOpenMenu((prevState) => !prevState)}
+              >
                 Yangiliklar
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__item-link" href="#">
+              <a
+                href="#"
+                className="nav__item-link"
+                onClick={() => setIsOpenMenu((prevState) => !prevState)}
+              >
                 Kurslar
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__item-link" href="#">
+              <a
+                href="#"
+                className="nav__item-link"
+                onClick={() => setIsOpenMenu((prevState) => !prevState)}
+              >
                 Bizning kutubxona
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__item-link" href="#">
+              <a
+                href="#"
+                className="nav__item-link"
+                onClick={() => setIsOpenMenu((prevState) => !prevState)}
+              >
                 O'qituvchilar
               </a>
             </li>

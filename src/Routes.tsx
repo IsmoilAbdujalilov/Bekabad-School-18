@@ -5,9 +5,9 @@ const Routes = () => {
   return (
     <>
       <Header />
-      {/* <main className="main">
+      <main className="main">
         <Outlet />
-      </main> */}
+      </main>
       <Footer />
     </>
   );
