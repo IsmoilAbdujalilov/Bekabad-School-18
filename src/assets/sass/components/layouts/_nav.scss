@@ -8,7 +8,7 @@
     }
   }
   &-school-name {
-    @include headingFonts(#1f2633, 22px, 600, 1px, none);
+    @include headingFonts(#1f2633, 22px, 600, 30px, none);
     @include defaultMediaQuery(900px) {
       font-size: 18px;
     }

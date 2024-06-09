@@ -1,11 +1,11 @@
 import {
   Hero,
-  SchoolNews,
-  SchoolInfo,
+  // SchoolNews,
+  // SchoolInfo,
   SchoolNumbers,
-  SchoolLibrary,
-  SchoolTeachers,
-  SchoolActiveWork,
+  // SchoolLibrary,
+  // SchoolTeachers,
+  // SchoolActiveWork,
 } from "../components";
 
 const Home = () => {

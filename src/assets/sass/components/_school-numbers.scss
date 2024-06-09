@@ -7,16 +7,33 @@
     &-heading {
       margin-bottom: 30px;
       @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+
+      @include sm {
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
     }
     &-horizontal-rule {
       height: 3px;
       max-width: 539px;
       margin-bottom: 45px;
       background-color: #1f2633;
+
+      @include sm {
+        margin-bottom: 15px;
+      }
     }
   }
   &__list {
     @include gridLayout(grid, 4, none, center, 40px);
+
+    @include defaultMediaQuery(1200px) {
+      @include gridLayout(grid, 3, none, center, 20px);
+    }
+
+    @include defaultMediaQuery(950px) {
+      @include gridLayout(grid, 2, none, center, 10px);
+    }
   }
   &__item {
     padding: 24px;
@@ -33,6 +50,10 @@
     -webkit-transition: box-shadow 300ms linear;
     @include flexLayout(flex, flex-start, center, 24px, row nowrap);
 
+    @include defaultMediaQuery(465px) {
+      padding: 10px;
+    }
+
     &:hover {
       box-shadow: 0px 4px 9.5px -3px #00000040;
     }
@@ -40,6 +61,16 @@
       width: 76px;
       height: 76px;
       object-fit: cover;
+
+      @include sm {
+        width: 46px;
+        height: 46px;
+      }
+
+      @include defaultMediaQuery(410px) {
+        width: 36px;
+        height: 36px;
+      }
     }
     &-results {
       position: relative;
@@ -55,11 +86,26 @@
     &-title {
       margin-bottom: 5px;
       @include headingFonts(#1f2633, 14px, 600, 17.07px, none);
+
+      @include sm {
+        font-size: 12px;
+      }
+
+      @include defaultMediaQuery(410px) {
+        font-size: 10px;
+        margin-bottom: 0px;
+        line-height: 0px;
+      }
     }
     &-number {
       @include headingFonts(#003057, 32px, 700, 39.01px, none);
       @include defaultMediaQuery(1235px) {
         font-size: 25px;
+      }
+
+      @include sm {
+        font-size: 20px;
+        line-height: 26px;
       }
     }
   }
