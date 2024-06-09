@@ -1,9 +1,9 @@
 import {
   Hero,
-  // SchoolNews,
-  // SchoolInfo,
+  SchoolNews,
+  SchoolInfo,
   SchoolNumbers,
-  // SchoolLibrary,
+  SchoolLibrary,
   // SchoolTeachers,
   // SchoolActiveWork,
 } from "../components";
@@ -13,11 +13,11 @@ const Home = () => {
     <>
       <Hero />
       <SchoolNumbers />
-      {/* <SchoolInfo />
+      <SchoolInfo />
       <SchoolNews />
-      <SchoolActiveWork />
+      {/* <SchoolActiveWork /> */}
       <SchoolLibrary />
-      <SchoolTeachers /> */}
+      {/* <SchoolTeachers /> */}
     </>
   );
 };

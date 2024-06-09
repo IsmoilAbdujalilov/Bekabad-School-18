@@ -11,11 +11,19 @@
     width: 150px;
     text-align: center;
     display: inline-block;
+
+    @include sm {
+      width: 100px;
+    }
   }
   &-intro {
     width: 85px;
     @include defaultMediaQuery(900px) {
       width: 75px;
+    }
+
+    @include sm {
+      width: 50px;
     }
   }
   &-bars {

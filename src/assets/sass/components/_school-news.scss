@@ -5,7 +5,15 @@
     &-heading {
       letter-spacing: 0em;
       margin-bottom: 30px;
+
+      @include md {
+        margin-bottom: 20px;
+      }
       @include headingFonts(#1f2633, 36px, 700, 44px, none);
+
+      @include md {
+        font-size: 28px;
+      }
     }
   }
   transition: opacity 300ms linear;
@@ -21,6 +29,14 @@
     }
     &-all {
       @include headingFonts(#003057, 20px, 600, 24.38px, none);
+
+      @include md {
+        font-size: 18px;
+      }
+
+      @include sm {
+        font-size: 16px;
+      }
     }
     &-icon {
       width: 24px;
@@ -32,15 +48,35 @@
     width: 387px;
     margin-bottom: 45px;
     background-color: #1f2633;
+
+    @include sm {
+      width: 200px;
+    }
+
+    @include md {
+      margin-bottom: 30px;
+    }
   }
   &__container {
     padding: 30px;
+
+    @include defaultMediaQuery(900px) {
+      padding: 20px;
+    }
   }
   &__cards {
     gap: 20px;
     display: grid;
     align-items: flex-start;
     grid-template-columns: repeat(3, 1fr);
+
+    @include defaultMediaQuery(1185px) {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @include sm {
+      grid-template-columns: auto;
+    }
   }
   &__card {
     min-height: 400px;
@@ -66,12 +102,25 @@
     &-icon {
       width: 24px;
       height: 24px;
+
+      @include sm {
+        width: 18px;
+        height: 18px;
+      }
     }
     &-date {
       @include headingFonts(#ffffff, 16px, 500, 19.5px, none);
+
+      @include sm {
+        font-size: 14px;
+      }
     }
     &-text {
       @include headingFonts(#ffffff, 14px, 600, 17.07px, none);
+
+      @include sm {
+        font-size: 12px;
+      }
     }
   }
   &__footer {
@@ -87,6 +136,10 @@
   }
   &__content {
     max-width: 337px;
+
+    @include defaultMediaQuery(1185px) {
+      max-width: 100%;
+    }
     &-img {
       width: 100%;
       height: 319px;
@@ -97,6 +150,10 @@
       -ms-border-radius: 8px;
       -moz-border-radius: 8px;
       -webkit-border-radius: 8px;
+
+      @include defaultMediaQuery(900px) {
+        height: 225px;
+      }
     }
     &-heading {
       overflow: hidden;
@@ -105,6 +162,12 @@
       -webkit-box-orient: vertical;
       margin-bottom: 20px;
       @include headingFonts(#1f2633, 24px, 600, 29.26px, none);
+
+      @include md {
+        @include headingFonts(#1f2633, 20px, 600, 25px, none);
+
+        margin-bottom: 10px;
+      }
     }
     &-text {
       overflow: hidden;
@@ -112,6 +175,10 @@
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       @include headingFonts(#515865, 16px, 400, 19.5px, none);
+
+      @include md {
+        font-size: 14px;
+      }
     }
   }
 }
