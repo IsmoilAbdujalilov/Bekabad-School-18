@@ -4,7 +4,7 @@ import {
   SchoolInfo,
   SchoolNumbers,
   SchoolLibrary,
-  // SchoolTeachers,
+  SchoolTeachers,
   SchoolActiveWork,
 } from "../components";
 
@@ -17,7 +17,7 @@ const Home = () => {
       <SchoolNews />
       <SchoolActiveWork />
       <SchoolLibrary />
-      {/* <SchoolTeachers /> */}
+      <SchoolTeachers />
     </>
   );
 };

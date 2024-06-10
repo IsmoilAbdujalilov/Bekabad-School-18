@@ -20,7 +20,6 @@ const SchoolActiveWork = () => {
         </div>
         <div className="school-active-work__slider">
           <Swiper
-            loop
             navigation={{
               nextEl: ".school-active-work__btn--next",
               prevEl: ".school-active-work__btn--prev",

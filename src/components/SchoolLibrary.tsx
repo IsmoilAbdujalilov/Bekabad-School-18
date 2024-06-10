@@ -63,7 +63,6 @@ const SchoolLibrary = () => {
         </div>
 
         <Swiper
-          loop
           spaceBetween={20}
           slidesPerView={4}
           modules={[Navigation, Autoplay]}

@@ -1,8 +1,7 @@
 import Button from "./Button";
-import { Navigation } from "swiper/modules";
-import { ArrowRight } from "../assets/images/svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SchoolTeacher } from "../assets/images/jpg";
+import { Navigation, Autoplay } from "swiper/modules";
 
 const SchoolTeachers = () => {
   return (
@@ -63,9 +62,26 @@ const SchoolTeachers = () => {
             prevEl: ".school-teachers__buttons-btn--left",
             nextEl: ".school-teachers__buttons-btn--right",
           }}
+          autoplay={{
+            delay: 2500,
+          }}
           spaceBetween={20}
           slidesPerView={3}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
+          breakpoints={{
+            1440: {
+              slidesPerView: 4,
+            },
+            800: {
+              slidesPerView: 3,
+            },
+            578: {
+              slidesPerView: 2,
+            },
+            350: {
+              slidesPerView: 1,
+            },
+          }}
           className="school-teachers__list"
         >
           <SwiperSlide>
