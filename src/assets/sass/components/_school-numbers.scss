@@ -20,7 +20,8 @@
       background-color: #1f2633;
 
       @include sm {
-        margin-bottom: 15px;
+        width: 75%;
+        margin-bottom: 30px;
       }
     }
   }

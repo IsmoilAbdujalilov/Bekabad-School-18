@@ -1,7 +1,7 @@
 import Button from "./Button";
-import { Navigation } from "swiper/modules";
 import { SliderImg } from "../assets/images/jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
 import {
   SchoolWorkFooterIcon1,
   SchoolWorkFooterIcon2,
@@ -20,12 +20,16 @@ const SchoolActiveWork = () => {
         </div>
         <div className="school-active-work__slider">
           <Swiper
+            loop
             navigation={{
               nextEl: ".school-active-work__btn--next",
               prevEl: ".school-active-work__btn--prev",
             }}
+            autoplay={{
+              delay: 2500,
+            }}
             spaceBetween={15}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             className="school-active-work__list"
           >
             <SwiperSlide className="school-active-work__item">

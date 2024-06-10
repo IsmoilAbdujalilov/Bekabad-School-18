@@ -69,9 +69,7 @@
     }
 
     @include defaultMediaQuery(800px) {
-      margin: 0 auto;
       max-width: 100%;
-      text-align: center;
       margin-bottom: 50px;
     }
 
@@ -93,10 +91,6 @@
       @include sm {
         width: 75%;
         margin-bottom: 30px;
-        margin: {
-          left: auto;
-          right: auto;
-        }
       }
     }
     &-text {

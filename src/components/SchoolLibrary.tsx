@@ -1,4 +1,5 @@
 import Button from "./Button";
+import { Autoplay } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -62,13 +63,31 @@ const SchoolLibrary = () => {
         </div>
 
         <Swiper
+          loop
           spaceBetween={20}
           slidesPerView={4}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
+          autoplay={{
+            delay: 2500,
+          }}
           className="school-library__list"
           navigation={{
             prevEl: ".school-library__buttons-btn--left",
             nextEl: ".school-library__buttons-btn--right",
+          }}
+          breakpoints={{
+            1440: {
+              slidesPerView: 4,
+            },
+            800: {
+              slidesPerView: 3,
+            },
+            578: {
+              slidesPerView: 2,
+            },
+            350: {
+              slidesPerView: 1,
+            },
           }}
         >
           <SwiperSlide>

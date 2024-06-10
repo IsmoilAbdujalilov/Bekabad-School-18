@@ -7,12 +7,26 @@
     &-heading {
       margin-bottom: 30px;
       @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+
+      @include md {
+        font-size: 36px;
+      }
+
+      @include sm {
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
     }
     &-horizontal-rule {
       height: 3px;
       width: 387px;
       margin-bottom: 60px;
       background-color: #1f2633;
+
+      @include sm {
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
   }
   &__buttons {
@@ -20,6 +34,10 @@
     &-btn {
       @include Button(#003057, none, 50%, 20px, none);
       @include flexLayout(flex, center, center, none, row nowrap);
+
+      @include sm {
+        @include Button(#003057, none, 50%, 15px, none);
+      }
       svg {
         path {
           stroke: #ffffff;
@@ -36,6 +54,11 @@
       svg {
         width: 24px;
         height: 24px;
+
+        @include sm {
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }
@@ -84,6 +107,10 @@
       -moz-transition: color 300ms linear, background-color 300ms linear;
       -ms-transition: color 300ms linear, background-color 300ms linear;
       -o-transition: color 300ms linear, background-color 300ms linear;
+
+      @include sm {
+        font-size: 15px;
+      }
       svg {
         path {
           transition: stroke 300ms linear;
