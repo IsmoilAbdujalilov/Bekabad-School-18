@@ -1,5 +1,44 @@
 .hero {
   padding: 20px 0;
+
+  &__container {
+    position: relative;
+  }
+
+  &__modal {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    padding: 0 10px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    @include flexLayout(flex, center, center, none, row nowrap);
+
+    &-video {
+      width: 100%;
+      height: 400px;
+
+      @include md {
+        height: 300px;
+      }
+
+      @include sm {
+        height: 250px;
+      }
+    }
+
+    &-icon {
+      right: 0;
+      top: -30px;
+      z-index: 3;
+      color: white;
+      font-size: 30px;
+      position: absolute;
+    }
+  }
+
   &-content {
     margin: 0 auto;
     max-width: 574px;

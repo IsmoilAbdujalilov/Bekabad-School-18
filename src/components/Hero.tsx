@@ -1,5 +1,9 @@
 import Button from "./Button";
+import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
+import ReactPlayer from "react-player/lazy";
 import { Play } from "../assets/images/svg";
+import { HeroVideo } from "../assets/video";
 import {
   HeroImg1,
   HeroImg2,
@@ -9,15 +13,35 @@ import {
 } from "../assets/images/jpg";
 
 const Hero = () => {
+  const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
+
   return (
     <section className="hero">
       <div className="container">
+        {isOpenModal && (
+          <div className="hero__modal">
+            <div className="hero__container">
+              <FaTimes
+                cursor={"pointer"}
+                className="hero__modal-icon"
+                onClick={() => setIsOpenModal(false)}
+              />
+              <video className="hero__modal-video" controls autoPlay>
+                <source src={HeroVideo} />
+              </video>
+            </div>
+          </div>
+        )}
         <div className="hero-content">
           <h1 className="visually-hidden">18 - Maktab</h1>
           <h2 className="hero-text">
             MAKTABIMIZDA HAR BIR LAHZA BILIM OLISH UCHUN IMKONIYATDIR
           </h2>
-          <Button type="button" className="hero-btn">
+          <Button
+            type="button"
+            className="hero-btn"
+            onClick={() => setIsOpenModal(true)}
+          >
             <span className="hero-btn-text">Showreel</span>
             <span className="hero-btn__bg">
               <img
