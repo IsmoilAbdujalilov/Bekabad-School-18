@@ -1,5 +1,6 @@
 .school-info {
   padding: 0px 0px 120px 0px;
+
   &-images {
     @include gridLayout(grid, 2, flex-start, flex-start, 20px);
 
@@ -77,6 +78,11 @@
     &-title {
       margin-bottom: 30px;
       @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+
+      @include sm {
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
     }
     &-horizontal-rule {
       height: 3px;
@@ -86,6 +92,7 @@
 
       @include sm {
         width: 75%;
+        margin-bottom: 30px;
         margin: {
           left: auto;
           right: auto;
@@ -108,6 +115,10 @@
       &:hover {
         color: #003057;
         background-color: transparent;
+      }
+
+      @include sm {
+        font-size: 15px;
       }
     }
   }

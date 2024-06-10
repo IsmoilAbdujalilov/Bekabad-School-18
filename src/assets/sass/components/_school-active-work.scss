@@ -1,15 +1,34 @@
 .school-active-work {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+
+  @include sm {
+    padding-bottom: 60px;
+  }
+
   &__top {
     &-heading {
       margin-bottom: 30px;
       @include headingFonts(#1f2633, 36px, 700, 43.88px, none);
+
+      @include md {
+        font-size: 36px;
+      }
+
+      @include sm {
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
     }
     &-horizontal-rule {
       height: 3px;
       width: 387px;
       margin-bottom: 45px;
       background-color: #1f2633;
+
+      @include sm {
+        width: 75%;
+        margin-bottom: 30px;
+      }
     }
   }
   &__slider {
@@ -20,6 +39,10 @@
     &-img {
       height: 589px;
       object-fit: cover;
+
+      @include sm {
+        height: 365px;
+      }
     }
   }
   &__buttons {
@@ -44,7 +67,6 @@
       -ms-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
       -webkit-transform: rotate(180deg);
-
     }
 
     svg {
@@ -66,12 +88,27 @@
   }
   &__list {
     @include flexLayout(flex, space-between, center, none, row nowrap);
+
+    @include defaultMediaQuery(1000px) {
+      flex-direction: column;
+    }
   }
   &__block {
     width: 100%;
     position: relative;
     padding: 30px 60px 30px 60px;
     @include flexLayout(flex, flex-start, flex-start, 36px, row nowrap);
+
+    @include defaultMediaQuery(1100px) {
+      padding: 30px;
+      @include flexLayout(flex, flex-start, flex-start, 26px, row nowrap);
+    }
+
+    @include defaultMediaQuery(1000px) {
+      padding: 30px 15px;
+      @include flexLayout(flex, flex-start, flex-start, 16px, row nowrap);
+    }
+
     &::after {
       top: 0px;
       width: 1px;
@@ -120,6 +157,10 @@
     -moz-transition: color 300ms linear, background-color 300ms linear;
     -ms-transition: color 300ms linear, background-color 300ms linear;
     -o-transition: color 300ms linear, background-color 300ms linear;
+
+    @include sm {
+      font-size: 15px;
+    }
     svg {
       path {
         transition: stroke 300ms linear;

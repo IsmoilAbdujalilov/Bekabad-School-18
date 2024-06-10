@@ -3,9 +3,9 @@ import {
   SchoolNews,
   SchoolInfo,
   SchoolNumbers,
-  SchoolLibrary,
+  // SchoolLibrary,
   // SchoolTeachers,
-  // SchoolActiveWork,
+  SchoolActiveWork,
 } from "../components";
 
 const Home = () => {
@@ -15,8 +15,8 @@ const Home = () => {
       <SchoolNumbers />
       <SchoolInfo />
       <SchoolNews />
-      {/* <SchoolActiveWork /> */}
-      <SchoolLibrary />
+      <SchoolActiveWork />
+      {/* <SchoolLibrary /> */}
       {/* <SchoolTeachers /> */}
     </>
   );

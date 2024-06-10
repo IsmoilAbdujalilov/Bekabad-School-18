@@ -1,5 +1,9 @@
 .school-news {
   margin-bottom: 120px;
+
+  @include sm {
+    margin-bottom: 60px;
+  }
   &__top {
     @include flexLayout(flex, space-between, center, none, row nowrap);
     &-heading {
@@ -7,12 +11,12 @@
       margin-bottom: 30px;
 
       @include md {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
       @include headingFonts(#1f2633, 36px, 700, 44px, none);
 
       @include md {
-        font-size: 28px;
+        font-size: 26px;
       }
     }
   }
@@ -41,6 +45,11 @@
     &-icon {
       width: 24px;
       height: 24px;
+
+      @include sm {
+        height: 17px;
+        width: 17px;
+      }
     }
   }
   &-horizontal-rule {
@@ -51,6 +60,7 @@
 
     @include sm {
       width: 200px;
+      margin-bottom: 30px;
     }
 
     @include md {

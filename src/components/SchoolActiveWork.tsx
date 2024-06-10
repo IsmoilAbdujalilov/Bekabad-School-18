@@ -24,6 +24,7 @@ const SchoolActiveWork = () => {
               nextEl: ".school-active-work__btn--next",
               prevEl: ".school-active-work__btn--prev",
             }}
+            spaceBetween={15}
             modules={[Navigation]}
             className="school-active-work__list"
           >
