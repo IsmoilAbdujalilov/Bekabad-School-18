@@ -10,6 +10,7 @@ import {
   HeroImg5,
   HeroBigImage1,
   HeroBigImage2,
+  HeroBigImage3,
 } from "./hero";
 import {
   SchoolInfoImg1,
@@ -34,6 +35,7 @@ export {
   SchoolNews1,
   SchoolNews2,
   SchoolNews3,
+  HeroBigImage3,
   HeroBigImage1,
   SiteDeveloper,
   HeroBigImage2,
