@@ -4,7 +4,7 @@ const Teachers = () => {
   return (
     <section className="school-teachers">
       <h2>School Teacher Page</h2>
-      <BackgroundHeroImg />
+      <BackgroundHeroImg title="" url="" />
     </section>
   );
 };

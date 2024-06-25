@@ -4,7 +4,7 @@ const Events = () => {
   return (
     <section className="school-events">
       <h2>Events Page</h2>
-      <BackgroundHeroImg />
+      <BackgroundHeroImg title="" url="" />
     </section>
   );
 };

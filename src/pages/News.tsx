@@ -4,7 +4,7 @@ const News = () => {
   return (
     <section className="school-news">
       <h2>School News</h2>
-      <BackgroundHeroImg />
+      <BackgroundHeroImg title="" url="" />
     </section>
   );
 };
