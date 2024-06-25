@@ -1,6 +1,7 @@
 import Button from "../Button";
 import { useState } from "react";
 import { HeaderLogo } from "../../assets/images/svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
@@ -8,7 +9,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__container container">
-        <a href="#">
+        <Link to="/">
           <div className="header__link">
             <img
               width={100}
@@ -20,7 +21,7 @@ const Header = () => {
             <p className="nav-school-city">Bekabod shahar</p>
             <p className="nav-school-name">18 - Maktab</p>
           </div>
-        </a>
+        </Link>
         <nav className="nav">
           <ul className={`nav__list ${isOpenMenu && "nav__list--active"}`}>
             <li className="nav__item">

@@ -1,7 +1,6 @@
 import Button from "./Button";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import ReactPlayer from "react-player/lazy";
 import { Play } from "../assets/images/svg";
 import { HeroVideo } from "../assets/video";
 import {

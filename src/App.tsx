@@ -12,6 +12,7 @@ const App = () => {
   const OneNews = lazy(() => import("./pages/OneNews"));
   const NotFound = lazy(() => import("./pages/NotFound"));
   const Teachers = lazy(() => import("./pages/Teachers"));
+  const SchoolAbout = lazy(() => import("./pages/SchoolAbout"));
   const AdditionalLessons = lazy(() => import("./pages/AdditionalLessons"));
 
   const routes = createBrowserRouter([
@@ -54,6 +55,10 @@ const App = () => {
         {
           path: "/pages/teachers",
           element: <Teachers />,
+        },
+        {
+          element: <SchoolAbout />,
+          path: "/pages/school/about",
         },
       ],
     },

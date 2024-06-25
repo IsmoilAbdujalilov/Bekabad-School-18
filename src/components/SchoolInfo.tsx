@@ -1,4 +1,5 @@
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 import {
   SchoolInfoImg1,
   SchoolInfoImg2,
@@ -7,6 +8,8 @@ import {
 } from "../assets/images/jpg";
 
 const SchoolInfo = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="school-info">
       <div className="school-info__container container">
@@ -22,7 +25,11 @@ const SchoolInfo = () => {
             unumdorligini yanada oshirish va samarali tashkil 2019-yil
             30-dekabrdagi 1202-sonli{" "}
           </p>
-          <Button type="button" className="school-info__content-btn">
+          <Button
+            type="button"
+            className="school-info__content-btn"
+            onClick={() => navigate("/pages/school/about")}
+          >
             Batafsil
           </Button>
         </div>
