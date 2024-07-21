@@ -1,0 +1,187 @@
+.school-library-page {
+  padding: 40px 0px;
+
+  &__search {
+    height: 46px;
+    max-width: 885px;
+    position: relative;
+    border-radius: 30px;
+    margin-bottom: 24px;
+    border: 1px solid #e1e1e1;
+
+    &-input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      position: relative;
+      padding: 15px 60px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.94px;
+
+      @include sm {
+        font-size: 16px;
+      }
+
+      &::placeholder {
+        color: #bebebe;
+      }
+
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+      }
+    }
+
+    &-icon {
+      top: 10px;
+      left: 20px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+    }
+  }
+
+  &__list {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+
+    @include md {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    &-btn {
+      gap: 8px;
+      border-radius: 8px;
+      padding: 12px 52px 12px 52px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.94px;
+      border: none;
+      color: #bebebe;
+      border: 1px solid #e1e1e1;
+      &--active {
+        color: #ffffff;
+        background-color: #003057;
+      }
+    }
+  }
+
+  &__cards {
+    gap: 20px;
+    display: grid;
+    margin-bottom: 75px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include defaultMediaQuery(1270px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include defaultMediaQuery(1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include defaultMediaQuery(700px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    &-image {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      margin-bottom: 5px;
+
+      @include sm {
+        height: 350px;
+      }
+    }
+  }
+
+  &__footer {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-btn {
+      width: 30%;
+      border-style: solid;
+      padding: 7.5px 24px;
+      display: inline-block;
+      text-align: center;
+      border-color: #e1e1e1;
+      background-color: #ffffff;
+      border-width: 0px, 0px, 0px, 0px;
+
+      &--read {
+        width: 70%;
+        border: none;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        padding: 12px 24px;
+        line-height: 21.94px;
+        background-color: #003057;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    &-image {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &-pagination {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &-pagination-button {
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0px;
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    padding: 12px 27px 12px 27px;
+    border-radius: 4px 0px 0px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: center;
+  }
+
+  &-pagination-active {
+    background-color: #003057;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #ffffff;
+  }
+
+  &-pagination-link {
+    gap: 8px;
+    opacity: 0px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    border: 1px 0px 0px 0px;
+    padding: 7px 11px 7px 11px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px 0px 0px 0px;
+    box-shadow: 1px 2px 4px 0px #00000029;
+  }
+}

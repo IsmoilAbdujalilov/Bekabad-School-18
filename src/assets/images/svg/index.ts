@@ -1,4 +1,6 @@
 import Play from "./play.svg";
+import SearchIcon from "./search-icon.svg";
+import UploadImage from "./upload-image.svg";
 import { FooterLogo, HeaderLogo } from "./Logo";
 import { Location, Mail, Phone } from "./contact";
 import { Facebook, Instagram, Telegram, Youtube } from "./brands";
@@ -27,6 +29,8 @@ export {
   BeStudents,
   HeaderLogo,
   FooterLogo,
+  SearchIcon,
+  UploadImage,
   ArrowRightLight,
   SchoolWorkFooterIcon1,
   SchoolWorkFooterIcon2,

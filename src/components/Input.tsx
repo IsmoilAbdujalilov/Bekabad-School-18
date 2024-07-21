@@ -5,6 +5,7 @@ type inputType = {
   checked?: any;
   required?: boolean;
   className?: string;
+  placeholder?: string;
   value?: string | number;
   onChange?: (e: any) => void;
 };
