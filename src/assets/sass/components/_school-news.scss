@@ -1,3 +1,11 @@
+.school-news-page {
+  margin-bottom: 90px;
+
+  @include sm {
+    margin-bottom: 30px;
+  }
+}
+
 .school-news {
   margin-bottom: 120px;
 
