@@ -11,7 +11,7 @@ const SchoolInfo = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="school-info">
+    <section className="school-info" id="school-about">
       <div className="school-info__container container">
         <div className="school-info__content">
           <h2 className="school-info__content-title">Maktabimiz haqida</h2>

@@ -1,6 +1,7 @@
 import Button from "./Button";
 import { Autoplay } from "swiper/modules";
 import { Navigation } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   SchoolLibraryImg1,
@@ -10,8 +11,10 @@ import {
 } from "../assets/images/jpg";
 
 const SchoolLibrary = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="school-library">
+    <section className="school-library" id="school-library">
       <div className="container">
         <div className="school-library__top">
           <div className="school-library__small-box">
@@ -178,7 +181,11 @@ const SchoolLibrary = () => {
           </SwiperSlide>
         </Swiper>
         <div className="school-library__bottom">
-          <Button type="button" className="school-library__bottom-btn">
+          <Button
+            type="button"
+            className="school-library__bottom-btn"
+            onClick={() => navigate("/pages/library")}
+          >
             Barchasi
             <svg
               width="16"

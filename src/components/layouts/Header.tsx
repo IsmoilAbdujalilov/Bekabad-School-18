@@ -26,7 +26,7 @@ const Header = () => {
           <ul className={`nav__list ${isOpenMenu && "nav__list--active"}`}>
             <li className="nav__item">
               <a
-                href="#"
+                href="#school-about"
                 className="nav__item-link"
                 onClick={() => setIsOpenMenu((prevState) => !prevState)}
               >
@@ -35,7 +35,7 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#"
+                href="#school-news"
                 className="nav__item-link"
                 onClick={() => setIsOpenMenu((prevState) => !prevState)}
               >
@@ -44,7 +44,7 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#"
+                href="#school-course"
                 className="nav__item-link"
                 onClick={() => setIsOpenMenu((prevState) => !prevState)}
               >
@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#"
+                href="#school-library"
                 className="nav__item-link"
                 onClick={() => setIsOpenMenu((prevState) => !prevState)}
               >
@@ -62,7 +62,7 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#"
+                href="#school-teacher"
                 className="nav__item-link"
                 onClick={() => setIsOpenMenu((prevState) => !prevState)}
               >

@@ -1,11 +1,15 @@
 import Button from "./Button";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SchoolTeacher } from "../assets/images/jpg";
 import { Navigation, Autoplay } from "swiper/modules";
 
 const SchoolTeachers = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="school-teachers">
+    <section className="school-teachers" id="school-teacher">
       <div className="container">
         <div className="school-teachers__top">
           <div className="school-teachers__small-box">
@@ -186,7 +190,11 @@ const SchoolTeachers = () => {
           </SwiperSlide>
         </Swiper>
         <div className="school-teachers__all">
-          <Button type="button" className="school-teachers__all-btn">
+          <Button
+            onClick={() => navigate("/pages/teachers")}
+            type="button"
+            className="school-teachers__all-btn"
+          >
             Barchasi
             <svg
               width="16"

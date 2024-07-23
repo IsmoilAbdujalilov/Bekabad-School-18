@@ -1,4 +1,5 @@
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 import { SliderImg } from "../assets/images/jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -9,8 +10,10 @@ import {
 } from "../assets/images/svg";
 
 const SchoolActiveWork = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="school-active-work">
+    <section className="school-active-work" id="school-course">
       <div className="container">
         <div className="school-active-work__top">
           <h2 className="school-active-work__top-heading">
@@ -168,7 +171,11 @@ const SchoolActiveWork = () => {
           </ul>
         </footer>
         <div className="school-active-work__bottom">
-          <Button type="button" className="school-active-work__bottom-btn">
+          <Button
+            type="button"
+            className="school-active-work__bottom-btn"
+            onClick={() => navigate("/pages/courses")}
+          >
             Barchasi
             <svg
               width="16"

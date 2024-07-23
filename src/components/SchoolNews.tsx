@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SchoolNews1, SchoolNews2, SchoolNews3 } from "../assets/images/jpg";
 import {
   ArrowRight,
@@ -7,11 +8,11 @@ import {
 
 const SchoolNews = () => {
   return (
-    <section className="school-news">
+    <section className="school-news" id="school-news">
       <div className="container">
         <div className="school-news__top">
           <h2 className="school-news__top-heading">Yangiliklar</h2>
-          <a className="school-news__link" href="#">
+          <Link className="school-news__link" to="/pages/news">
             <span className="school-news__link-all">Barchasi</span>
             <img
               width={24}
@@ -20,7 +21,7 @@ const SchoolNews = () => {
               alt="arrow-right-icon"
               className="school-news__link-icon"
             />
-          </a>
+          </Link>
         </div>
         <hr className="school-news-horizontal-rule" />
         <ul className="school-news__cards">
@@ -58,7 +59,7 @@ const SchoolNews = () => {
                     <time dateTime="12.03.2023">12.03.2023</time>
                   </p>
                 </div>
-                <a href="#">
+                <Link to="/pages/news/1">
                   <div className="school-news__calendar">
                     <span className="school-news__calendar-text">Batafsil</span>
                     <img
@@ -69,7 +70,7 @@ const SchoolNews = () => {
                       className="school-news__calendar-icon"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </footer>
           </li>
@@ -106,7 +107,7 @@ const SchoolNews = () => {
                     <time dateTime="12.03.2023">12.03.2023</time>
                   </p>
                 </div>
-                <a href="#">
+                <Link to="/pages/news/1">
                   <div className="school-news__calendar">
                     <span className="school-news__calendar-text">Batafsil</span>
                     <img
@@ -117,7 +118,7 @@ const SchoolNews = () => {
                       className="school-news__calendar-icon"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </footer>
           </li>
@@ -152,7 +153,7 @@ const SchoolNews = () => {
                     <time dateTime="12.03.2023">12.03.2023</time>
                   </p>
                 </div>
-                <a href="#">
+                <Link to="/pages/news/1">
                   <div className="school-news__calendar">
                     <span className="school-news__calendar-text">Batafsil</span>
                     <img
@@ -163,7 +164,7 @@ const SchoolNews = () => {
                       className="school-news__calendar-icon"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </footer>
           </li>
