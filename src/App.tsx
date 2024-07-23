@@ -49,10 +49,6 @@ const App = () => {
           element: <OneNews />,
         },
         {
-          path: "*",
-          element: <NotFound />,
-        },
-        {
           path: "/pages/teachers",
           element: <Teachers />,
         },
@@ -61,6 +57,10 @@ const App = () => {
           path: "/pages/school/about",
         },
       ],
+    },
+    {
+      path: "*",
+      element: <NotFound />,
     },
   ]);
 

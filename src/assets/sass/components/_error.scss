@@ -1,0 +1,47 @@
+.error {
+  width: 100%;
+  min-height: 100vh;
+  @include flexLayout(flex, center, center, 0px, row nowrap);
+
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 440px;
+    @include flexLayout(flex, center, center, 0px, column nowrap);
+
+    &-title {
+      font-size: 84px;
+      font-weight: 600;
+      color: #262630;
+      line-height: 56px;
+      margin-bottom: 36px;
+    }
+
+    &-text {
+      font-size: 16px;
+      color: #262630;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 36px;
+    }
+
+    &-btn {
+      width: 100%;
+      opacity: 0px;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 600;
+      line-height: 24px;
+      padding: 16px 24px;
+      border-radius: 8px;
+      border: 1px solid #003057;
+      background-color: #003057;
+      transition: background-color 150ms linear, color 150ms linear;
+
+      &:hover {
+        color: #003057;
+        background-color: transparent;
+      }
+    }
+  }
+}

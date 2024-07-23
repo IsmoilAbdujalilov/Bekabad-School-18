@@ -1,3 +1,4 @@
+import ErrorImage from "./error.png";
 import SchoolAboutImage from "./school-about.png";
 import { CourseImage1, CourseImage4 } from "./courses";
 import {
@@ -13,6 +14,7 @@ import {
 } from "./library";
 
 export {
+  ErrorImage,
   CourseImage1,
   CourseImage4,
   LibraryImage1,
