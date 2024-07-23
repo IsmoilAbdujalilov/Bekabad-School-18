@@ -1,11 +1,9 @@
-import { Link, useLocation, useParams } from "react-router-dom";
 import { SchoolBigNewsImage } from "../assets/images/jpg";
-import { Calendar } from "../assets/images/svg";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 const AdditionLessons = () => {
-  const location = useLocation();
-
   const { id } = useParams();
+  const location = useLocation();
 
   return (
     <section className="school-one-news">

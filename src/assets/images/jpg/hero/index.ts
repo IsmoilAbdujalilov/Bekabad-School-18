@@ -8,6 +8,7 @@ import HeroBigImage2 from "./hero-big-image-2.jpg";
 import HeroBigImage3 from "./hero-big-image-3.jpg";
 import HeroBigImage4 from "./hero-big-image-4.jpg";
 import HeroBigImage5 from "./hero-big-image-5.jpg";
+import HeroBigImage6 from "./hero-big-image-6.jpg";
 
 export {
   HeroImg1,
@@ -20,4 +21,5 @@ export {
   HeroBigImage3,
   HeroBigImage4,
   HeroBigImage5,
+  HeroBigImage6,
 };
