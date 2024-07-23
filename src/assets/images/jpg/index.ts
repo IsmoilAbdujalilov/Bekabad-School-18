@@ -1,7 +1,12 @@
 import SliderImg from "./slider-img.jpg";
 import SchoolTeacher from "./school-teacher.jpg";
 import SiteDeveloper from "./site_developer.jpg";
-import { SchoolNews1, SchoolNews2, SchoolNews3 } from "./school-news";
+import {
+  SchoolNews1,
+  SchoolNews2,
+  SchoolNews3,
+  SchoolBigNewsImage,
+} from "./school-news";
 import {
   HeroImg1,
   HeroImg2,
@@ -52,4 +57,5 @@ export {
   SchoolLibraryImg2,
   SchoolLibraryImg3,
   SchoolLibraryImg4,
+  SchoolBigNewsImage,
 };

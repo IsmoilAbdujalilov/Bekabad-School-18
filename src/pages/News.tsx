@@ -108,7 +108,7 @@ const AdditionLessons = () => {
                       <time dateTime="12.03.2023">12.03.2023</time>
                     </p>
                   </div>
-                  <a href="#">
+                  <Link to="/pages/news/1">
                     <div className="school-news__calendar">
                       <span className="school-news__calendar-text">
                         Batafsil
@@ -121,7 +121,7 @@ const AdditionLessons = () => {
                         className="school-news__calendar-icon"
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </footer>
             </li>
@@ -158,7 +158,7 @@ const AdditionLessons = () => {
                       <time dateTime="12.03.2023">12.03.2023</time>
                     </p>
                   </div>
-                  <a href="#">
+                  <Link to="/pages/news/1">
                     <div className="school-news__calendar">
                       <span className="school-news__calendar-text">
                         Batafsil
@@ -171,7 +171,7 @@ const AdditionLessons = () => {
                         className="school-news__calendar-icon"
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </footer>
             </li>
@@ -206,7 +206,7 @@ const AdditionLessons = () => {
                       <time dateTime="12.03.2023">12.03.2023</time>
                     </p>
                   </div>
-                  <a href="#">
+                  <Link to="/pages/news/1">
                     <div className="school-news__calendar">
                       <span className="school-news__calendar-text">
                         Batafsil
@@ -219,7 +219,7 @@ const AdditionLessons = () => {
                         className="school-news__calendar-icon"
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </footer>
             </li>
@@ -254,7 +254,7 @@ const AdditionLessons = () => {
                       <time dateTime="12.03.2023">12.03.2023</time>
                     </p>
                   </div>
-                  <a href="#">
+                  <Link to="/pages/news/1">
                     <div className="school-news__calendar">
                       <span className="school-news__calendar-text">
                         Batafsil
@@ -267,7 +267,7 @@ const AdditionLessons = () => {
                         className="school-news__calendar-icon"
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </footer>
             </li>
@@ -302,7 +302,7 @@ const AdditionLessons = () => {
                       <time dateTime="12.03.2023">12.03.2023</time>
                     </p>
                   </div>
-                  <a href="#">
+                  <Link to="/pages/news/1">
                     <div className="school-news__calendar">
                       <span className="school-news__calendar-text">
                         Batafsil
@@ -315,7 +315,7 @@ const AdditionLessons = () => {
                         className="school-news__calendar-icon"
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </footer>
             </li>
@@ -350,7 +350,7 @@ const AdditionLessons = () => {
                       <time dateTime="12.03.2023">12.03.2023</time>
                     </p>
                   </div>
-                  <a href="#">
+                  <Link to="/pages/news/1">
                     <div className="school-news__calendar">
                       <span className="school-news__calendar-text">
                         Batafsil
@@ -363,7 +363,7 @@ const AdditionLessons = () => {
                         className="school-news__calendar-icon"
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </footer>
             </li>
