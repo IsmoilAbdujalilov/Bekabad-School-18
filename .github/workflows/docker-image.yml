@@ -1,0 +1,60 @@
+name: Publish and Deploy React App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Publish:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Prepare Docker image
+        run: |
+          echo "FROM nginx:alpine" > Dockerfile
+          echo "COPY build /usr/share/nginx/html" >> Dockerfile
+
+      - name: Build Docker image
+        run: docker build -t $DOCKER_USERNAME/react-app .
+
+      - name: Push Docker image
+        run: |
+          echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+          docker push $DOCKER_USERNAME/react-app
+
+  Deploy:
+    name: Deploy
+    needs: Publish
+    runs-on: eskiz-srv
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      SERVER_USER: ${{ secrets.SERVER_USER }}
+      SERVER_IP: ${{ secrets.SERVER_IP }}
+    steps:
+      - name: Deploy to server
+        run: |
+          ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP <<EOF
+          docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+          docker pull $DOCKER_USERNAME/react-app
+          docker stop react-app || true
+          docker rm react-app || true
+          docker run -d -p 80:80 --name react-app $DOCKER_USERNAME/react-app
+          EOF
