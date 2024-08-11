@@ -42,7 +42,7 @@ jobs:
   Deploy:
     name: Deploy
     needs: Publish
-    runs-on: eskiz-srv
+    runs-on: ubuntu-latest
     env:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
