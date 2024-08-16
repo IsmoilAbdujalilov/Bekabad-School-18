@@ -1,4 +1,3 @@
-import React from 'react';
 import { BackgroundHeroImg } from "../components";
 import { HeroBigImage6 } from "../assets/images/jpg/hero";
 import {
